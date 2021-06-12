@@ -1,8 +1,37 @@
-# Safemoon.sol
-safemoon contract
-Safemoon protocol is a mixture of RFI tokenomics with the added function of auto-liquidity generating protocol. A fork from BEE with some added benefits.
-First, the dev has minted the tokens - sent the balance to DxSale for fair launch - and then burned the remainder of the tokens. Dev had to partake in presale.
-Second, utilized the DxSale protocol to foster trust in the community by auto-locking liquidity for 4 years.
-Simple tokenomics and elegant design and production of token information has catered to the overall success of the project.
-100% community owned and driven - no rug is possible. 
-#safemoon join us on our journey safely to the moon!
+# SaferProtocol BSCCore
+* **Objective** - To create a product which ...
+
+## PreRequisites
+* Create Ethereum wallet
+* Install Chrome, Firefox, Opera
+* Install MetaMask
+* Link MetaMask to Ethereum Wallet
+* Generate MetaMask Test Wallet from Faucet
+* Install NodeJS
+* Install TruffleJS
+* Install Ganache
+
+## Instructions for Creating Your Own Coin
+* Execute the command below to install node packages
+	* `npm install`
+* Execute the command below to create a `.env` file
+	* `node ./automation/create-env.js`
+* Execute the command below to access truffle console
+	* `truffle console --network ropsten`
+* Execute the command below from the truffle console
+	* `web3.eth.getAccounts()`
+* Copy the first address listed
+	* send ether to first account listed
+* Verify the address has ether after sending it
+	* `web3.eth.getBalance('0xAddressOfAccount');`
+* Execute the command below from the root directory of this project
+	* `./deploy-application.sh`
+
+
+## Instructions for Local Deployment
+* Upon cloning the project execute the command below to start a local blockchain fork
+  * `./start-local-blockchain-fork.sh`
+* Upon running a local blockahin fork, execute the following command from the root directory of the project to deploy a smart contract to your local Ganache.
+  * `./deploy-application.sh`
+* Ensure the `contracts/SaferProtocolDeFi.sol` file is referring to a local-ganache token
+  * `IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x98AB334d0041298410D109B2F3437A19C94489B6);`
