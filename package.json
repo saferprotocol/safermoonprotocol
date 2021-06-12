@@ -1,7 +1,7 @@
 {
-  "name": "truffle.saferprotocol-coin",
+  "name": "truffle.safermoonprotocol-coin",
   "version": "1.0.0",
-  "description": "saferprotocol defi coin",
+  "description": "safermoonprotocol defi coin",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"

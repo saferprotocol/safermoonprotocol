@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 import "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol";
 
-contract SaferProtocolDeFi is Context, IERC20, Ownable {
+contract SaferMoonProtocolDeFi is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -27,8 +27,8 @@ contract SaferProtocolDeFi is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "PU$$YPOP";
-    string private _symbol = "P$P";
+    string private _name = "SaferMoonProtocolCoin";
+    string private _symbol = "SaferMoonProtocolSymbol";
     uint8 private _decimals = 9;
     
     uint256 public _taxFee = 5;

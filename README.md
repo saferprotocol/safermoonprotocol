@@ -1,4 +1,4 @@
-# SaferProtocol BSCCore
+# SaferMoonProtocol BSCCore
 * **Objective** - To create a product which ...
 
 ## PreRequisites
@@ -33,5 +33,5 @@
   * `./start-local-blockchain-fork.sh`
 * Upon running a local blockahin fork, execute the following command from the root directory of the project to deploy a smart contract to your local Ganache.
   * `./deploy-application.sh`
-* Ensure the `contracts/SaferProtocolDeFi.sol` file is referring to a local-ganache token
+* Ensure the `contracts/SaferMoonProtocolDeFi.sol` file is referring to a local-ganache token
   * `IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x98AB334d0041298410D109B2F3437A19C94489B6);`
