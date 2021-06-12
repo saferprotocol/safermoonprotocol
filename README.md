@@ -1,12 +1,13 @@
 # SaferMoonProtocol BSCCore
-* **Objective** - To create a product which ...
+* **Objective** - To create a template for launchin cryptos
 
 ## PreRequisites
 * Create Ethereum wallet
 * Install Chrome, Firefox, Opera
 * Install MetaMask
 * Link MetaMask to Ethereum Wallet
-* Generate MetaMask Test Wallet from Faucet
+* Create MetaMask Test Wallet
+* Generate Currency From Faucet
 * Install NodeJS
 * Install TruffleJS
 * Install Ganache
@@ -34,4 +35,4 @@
 * Upon running a local blockahin fork, execute the following command from the root directory of the project to deploy a smart contract to your local Ganache.
   * `./deploy-application.sh`
 * Ensure the `contracts/SaferMoonProtocolDeFi.sol` file is referring to a local-ganache token
-  * `IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x98AB334d0041298410D109B2F3437A19C94489B6);`
+  * `IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(:routerAddress);`
